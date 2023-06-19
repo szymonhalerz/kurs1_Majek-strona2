@@ -1,0 +1,218 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.heading {
+	padding: 20px 0px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+section {
+	scroll-margin-top: 80px;
+}
+
+/* NAV */
+nav {
+	position: sticky;
+	top: 0;
+	height: 60px;
+	line-height: 60px;
+	background-color: #ddd;
+	text-align: center;
+	z-index: 1000;
+}
+
+.burger-btn {
+	display: block;
+	margin-left: auto;
+	padding: 0 30px;
+	line-height: 60px;
+	font-size: 30px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.nav-items {
+	display: none;
+}
+
+/* HEADER */
+.hero-img {
+	position: relative;
+	background-image: url('../img/header-mini.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	text-shadow: 3px 3px 5px #000;
+	z-index: 100;
+}
+
+.hero-heading span {
+	text-transform: uppercase;
+	color: #09f;
+}
+
+/* MAIN */
+
+/* ABOUT US */
+.about-us-box p {
+	padding: 0 25px;
+	margin-bottom: 20px;
+}
+
+/* PRODUKTY */
+.products-box {
+	margin-bottom: 50px;
+}
+
+.product-box {
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+}
+
+.product-box:hover h3 {
+	transform: scale(1.4);
+}
+
+.product-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.product-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	z-index: 100;
+}
+
+.product-text h3 {
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #fff;
+	transition: transform 0.3s;
+}
+
+.first {
+	background-image: url('../img/children-gaacce8b97_640.jpg');
+}
+
+.second {
+	background-image: url('../img/keyboard-g394db844c_640.jpg');
+}
+
+.third {
+	background-image: url('../img/woman-g425e0bb02_640.jpg');
+}
+
+.fourth {
+	background-image: url('../img/laptop-ge07937a83_640.jpg');
+}
+
+/* KONTAKT */
+.contact-box h3 {
+	margin-top: 20px;
+}
+
+.contact {
+	margin-top: 20px;
+}
+
+.contact-item {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.contact-item i {
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+/* FOOTER */
+footer {
+	position: absolute;
+	width: 100%;
+	height: 70px;
+	margin-top: 70px;
+	line-height: 70px;
+	text-align: center;
+	background-color: #ddd;
+}
+
+@media (min-width: 768px) {
+	.burger-btn {
+		display: none;
+	}
+
+	.nav-items {
+		display: block;
+	}
+
+	.nav-items a {
+		padding: 0px 30px;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight: bold;
+		color: #333;
+		transition: color 0.3s;
+	}
+
+	.nav-items a:hover {
+		color: #09f;
+	}
+}
+
+@media (min-width: 1024px) {
+	.products-box {
+		font-size: 0px;
+	}
+
+	.product-box {
+		font-size: 20px;
+		display: inline-block;
+		width: 50%;
+	}
+
+	.heading {
+		font-size: 30px;
+	}
+}
